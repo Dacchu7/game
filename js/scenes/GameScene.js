@@ -53,7 +53,7 @@ class GameScene extends Phaser.Scene {
         this.showLevelStart();
 
         // Timer
-        this.timerEvent = this.time.addTimer({
+        this.timerEvent = this.time.addEvent({
             delay: 1000,
             callback: this.updateTimer,
             callbackScope: this,
