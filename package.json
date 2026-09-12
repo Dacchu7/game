@@ -1,0 +1,51 @@
+{
+    "name": "ganesha-chaturthi-game",
+    "version": "1.0.0",
+    "description": "🙏 Ganesha Chaturthi - Divine Quest. A festive game celebrating Lord Ganesha with smooth animations, multiple levels, and mobile support.",
+    "main": "index.html",
+    "type": "module",
+    "scripts": {
+        "start": "http-server -p 8000 -c-1 -o index.html",
+        "dev": "http-server -p 8000 -c-1",
+        "serve": "python -m http.server 8000",
+        "build": "echo 'No build process needed for this web game!'",
+        "test": "echo 'Game testing: Open http://localhost:8000 in your browser'",
+        "minify": "terser js/*.js -o js/bundle.min.js",
+        "deploy:github": "git push origin main",
+        "deploy:netlify": "netlify deploy --prod",
+        "preview": "open http://localhost:8000 || start http://localhost:8000 || xdg-open http://localhost:8000"
+    },
+    "keywords": [
+        "ganesha",
+        "chaturthi",
+        "game",
+        "phaser",
+        "festival",
+        "divine",
+        "html5",
+        "javascript",
+        "animation"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "http-server": "^14.1.1",
+        "terser": "^5.26.0",
+        "netlify-cli": "^17.0.0"
+    },
+    "dependencies": {
+        "phaser": "^3.55.2"
+    },
+    "engines": {
+        "node": ">=14.0.0",
+        "npm": ">=6.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/ganesha-chaturthi-game.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yourusername/ganesha-chaturthi-game/issues"
+    },
+    "homepage": "https://github.com/yourusername/ganesha-chaturthi-game#readme"
+}

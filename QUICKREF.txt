@@ -1,0 +1,300 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                  🙏 GANESHA CHATURTHI - DIVINE QUEST 🙏                     ║
+║                         QUICK REFERENCE CARD                               ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+┌─ GETTING STARTED ───────────────────────────────────────────────────────────┐
+│                                                                             │
+│  1. OPEN: Double-click index.html                                          │
+│  2. CLICK: "START GAME" button                                             │
+│  3. PLAY: Collect offerings, avoid obstacles, complete level              │
+│                                                                             │
+│  📖 Full Guide: See QUICKSTART.md                                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ KEYBOARD CONTROLS ─────────────────────────────────────────────────────────┐
+│                                                                             │
+│  Arrow Keys (↑ ↓ ← →)   - Move Ganesha                                     │
+│  WASD                    - Alternative movement                            │
+│  SPACE                   - Pause/Resume                                    │
+│  Mouse                   - Click buttons                                   │
+│  Drag                    - Move on desktop                                 │
+│                                                                             │
+│  📱 Touch (Mobile): Drag finger to move, tap buttons                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ SCORING SYSTEM ────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  💰 Modak (Golden Sweet)  = +10 Points   ⭐ Best                           │
+│  🌸 Flower                = +5 Points                                      │
+│  🔱 Incense               = +8 Points                                      │
+│  ⚠️  Hit Obstacle          = -20 Points                                    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ LEVELS ────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  Level 1: Collect 10 offerings  │ Obstacles: 3   │ Time: 60s  │ Easy      │
+│  Level 2: Collect 15 offerings  │ Obstacles: 5   │ Time: 50s  │ Medium    │
+│  Level 3: Collect 20 offerings  │ Obstacles: 8   │ Time: 40s  │ Hard      │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ FILE STRUCTURE ────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  📁 game/                                                                   │
+│  ├── index.html               🎮 OPEN THIS TO PLAY!                       │
+│  ├── styles.css               🎨 Game styling                              │
+│  │                                                                         │
+│  ├── 📁 js/                   📜 Game code                                 │
+│  │   ├── config.js            ⚙️  Configuration (Edit for difficulty)     │
+│  │   ├── game.js              🎮 Initialization                            │
+│  │   └── scenes/              🎬 Game scenes                              │
+│  │       ├── BootScene.js     Create sprites                              │
+│  │       ├── PreloadScene.js  Load assets                                 │
+│  │       ├── MenuScene.js     Main menu                                   │
+│  │       ├── GameScene.js     ⭐ MAIN GAMEPLAY                            │
+│  │       ├── LevelCompleteScene.js                                        │
+│  │       └── GameOverScene.js                                             │
+│  │                                                                         │
+│  └── 📚 DOCUMENTATION                                                      │
+│      ├── README.md            Complete reference                          │
+│      ├── QUICKSTART.md        Quick start guide                           │
+│      ├── CONFIGURATION.md     How to customize                            │
+│      ├── DEPLOYMENT.md        How to publish online                       │
+│      ├── MOBILE_DISTRIBUTION.md  Create mobile apps                       │
+│      ├── PROJECT_SUMMARY.md   Project overview                           │
+│      ├── FAQ.md               Questions & troubleshooting                 │
+│      ├── INDEX.md             Documentation index                         │
+│      └── QUICKREF.txt         This file                                   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ CUSTOMIZATION QUICK TIPS ──────────────────────────────────────────────────┐
+│                                                                             │
+│  📖 Full Guide: CONFIGURATION.md                                           │
+│                                                                             │
+│  Change Difficulty:                                                        │
+│    Edit: js/config.js                                                      │
+│    Change: LEVELS section (offerings, obstacles, time)                    │
+│                                                                             │
+│  Change Colors:                                                            │
+│    Edit: js/scenes/BootScene.js                                           │
+│    Find: fillStyle(0xFFFFFF, 1)                                           │
+│    Change: Hex color codes                                                │
+│                                                                             │
+│  Change Speed:                                                             │
+│    Edit: js/config.js                                                      │
+│    Change: PLAYER_SPEED, OFFERING_SPEED, OBSTACLE_SPEED                  │
+│                                                                             │
+│  Add New Level:                                                            │
+│    Edit: js/config.js                                                      │
+│    Add: New entry to LEVELS object                                        │
+│                                                                             │
+│  Reload: Press F5 in browser to see changes                               │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ DEPLOYMENT OPTIONS ────────────────────────────────────────────────────────┐
+│                                                                             │
+│  📖 Full Guide: DEPLOYMENT.md                                              │
+│                                                                             │
+│  🔵 LOCAL SERVER (Instant):                                               │
+│     Windows: python -m http.server 8000                                   │
+│     Mac/Linux: python3 -m http.server 8000                                │
+│     Open: http://localhost:8000                                            │
+│                                                                             │
+│  🟢 GITHUB PAGES (Free):                                                  │
+│     1. Create GitHub repo                                                 │
+│     2. Push files                                                         │
+│     3. Enable Pages in settings                                           │
+│     4. URL: https://username.github.io/repo-name/                        │
+│                                                                             │
+│  🟠 NETLIFY (Free, Easiest):                                              │
+│     1. Go to netlify.com                                                   │
+│     2. Drag & drop game folder                                            │
+│     3. Game is live instantly!                                            │
+│                                                                             │
+│  🔷 FIREBASE (Free tier available):                                       │
+│     1. firebase login                                                      │
+│     2. firebase init hosting                                              │
+│     3. firebase deploy                                                    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ MOBILE APP DISTRIBUTION ───────────────────────────────────────────────────┐
+│                                                                             │
+│  📖 Full Guide: MOBILE_DISTRIBUTION.md                                     │
+│                                                                             │
+│  ✅ EASIEST: Progressive Web App (PWA)                                    │
+│     - No app store needed                                                  │
+│     - Install from browser                                                │
+│     - Works like native app                                               │
+│     - See MOBILE_DISTRIBUTION.md                                          │
+│                                                                             │
+│  📱 ANDROID: Google Play Store                                            │
+│     - Publish APK/AAB                                                      │
+│     - $25 one-time developer fee                                          │
+│     - 1-24 hour approval time                                             │
+│                                                                             │
+│  🍎 iOS: Apple App Store                                                  │
+│     - $99/year developer fee                                              │
+│     - 1-2 day approval time                                               │
+│     - Requires Mac + Xcode                                                │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ TROUBLESHOOTING ───────────────────────────────────────────────────────────┐
+│                                                                             │
+│  📖 Full Guide: FAQ.md                                                     │
+│                                                                             │
+│  ❌ Game won't start:                                                     │
+│     → Clear cache: Ctrl+Shift+Delete                                       │
+│     → Hard refresh: Ctrl+F5                                                │
+│     → Check DevTools: F12 → Console                                        │
+│     → Try different browser                                                │
+│                                                                             │
+│  ❌ Controls not working:                                                 │
+│     → Make sure not paused (press SPACE)                                   │
+│     → Click on game to activate                                            │
+│     → Try arrow keys or WASD                                               │
+│                                                                             │
+│  ❌ Game is laggy:                                                        │
+│     → Close other apps/tabs                                                │
+│     → Try different browser                                                │
+│     → Update graphics drivers                                              │
+│                                                                             │
+│  ❌ Sound not working:                                                    │
+│     → Check volume (not muted)                                             │
+│     → Some browsers need user interaction first                            │
+│     → Try different browser                                                │
+│                                                                             │
+│  ❌ Mobile touch not responsive:                                          │
+│     → Close other apps                                                     │
+│     → Use landscape orientation                                            │
+│     → Clear cache and reload                                               │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ BROWSER COMPATIBILITY ─────────────────────────────────────────────────────┐
+│                                                                             │
+│  Desktop:  ✅ Chrome  ✅ Firefox  ✅ Safari  ✅ Edge  ✅ Opera             │
+│  Mobile:   ✅ iOS Safari  ✅ Chrome Mobile  ✅ Firefox Mobile              │
+│  Tablet:   ✅ iPad  ✅ Android Tablets                                    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ TIPS & TRICKS ─────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  💡 Game Tips:                                                             │
+│     • Collect Modak first (highest points)                                │
+│     • Plan your path to avoid obstacles                                   │
+│     • Use screen edges for safety                                         │
+│     • Speed up as time runs out                                           │
+│     • Practice Level 1 to master controls                                 │
+│                                                                             │
+│  💡 Customization Tips:                                                   │
+│     • Start by only changing one thing                                    │
+│     • Always keep a backup of original files                              │
+│     • Use DevTools (F12) to test changes                                  │
+│     • Reload with F5 to see changes                                       │
+│                                                                             │
+│  💡 Deployment Tips:                                                      │
+│     • Test locally first                                                   │
+│     • Start with GitHub Pages (easiest)                                   │
+│     • Use Netlify for drag-and-drop deploy                                │
+│     • Test on mobile before publishing                                    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ QUICK LINKS ───────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  📖 Documentation:                                                         │
+│     • README.md - Full reference                                          │
+│     • QUICKSTART.md - Get playing fast                                    │
+│     • CONFIGURATION.md - Customize game                                   │
+│     • DEPLOYMENT.md - Publish online                                      │
+│     • MOBILE_DISTRIBUTION.md - Mobile apps                                │
+│     • PROJECT_SUMMARY.md - Project details                                │
+│     • FAQ.md - Q&A & help                                                 │
+│     • INDEX.md - Documentation index                                      │
+│                                                                             │
+│  🔧 Technology:                                                            │
+│     • Phaser 3.55.2 - Game Framework                                      │
+│     • JavaScript ES6+ - Programming Language                              │
+│     • Canvas API - Graphics                                               │
+│     • Web Audio API - Sound                                               │
+│                                                                             │
+│  🌐 External Links:                                                        │
+│     • Phaser Docs: https://photonstorm.github.io/phaser3-docs/           │
+│     • GitHub: https://github.com                                          │
+│     • Netlify: https://netlify.com                                        │
+│     • Firebase: https://firebase.google.com                               │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ QUICK STATS ───────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  📊 Project Metrics:                                                       │
+│     Code Lines: 1000+                                                      │
+│     Scenes: 6                                                              │
+│     Sprites: 5 types                                                       │
+│     Levels: 3                                                              │
+│     Performance: 60 FPS                                                    │
+│     File Size: < 1 MB                                                      │
+│     Installation: None                                                     │
+│     Dependencies: Phaser 3 (CDN)                                           │
+│     Platforms: Web, Mobile, Desktop, Tablet                                │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ NEXT STEPS ────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  👉 JUST WANT TO PLAY?                                                   │
+│     1. Open index.html                                                     │
+│     2. Click "START GAME"                                                  │
+│     3. Use arrow keys to move                                              │
+│     4. Collect offerings, avoid obstacles                                  │
+│     5. Have fun! 🎮                                                       │
+│                                                                             │
+│  👉 WANT TO CUSTOMIZE?                                                   │
+│     1. Read CONFIGURATION.md                                               │
+│     2. Edit js/config.js                                                   │
+│     3. Reload browser (F5)                                                 │
+│     4. See your changes!                                                   │
+│                                                                             │
+│  👉 WANT TO SHARE ONLINE?                                                │
+│     1. Read DEPLOYMENT.md                                                  │
+│     2. Choose hosting (GitHub Pages, Netlify, etc.)                       │
+│     3. Deploy your game                                                    │
+│     4. Share URL with friends!                                             │
+│                                                                             │
+│  👉 WANT TO CREATE MOBILE APP?                                           │
+│     1. Read MOBILE_DISTRIBUTION.md                                         │
+│     2. Choose method (PWA, Android, iOS)                                  │
+│     3. Follow steps                                                        │
+│     4. Publish to app stores!                                              │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║              🙏 May Lord Ganesha Bless You! 🙏                            ║
+║                                                                            ║
+║   Enjoy celebrating Ganesha Chaturthi with this festive game!             ║
+║                                                                            ║
+║   For questions: Read documentation files                                 ║
+║   For problems: Check FAQ.md                                              ║
+║   For help: Visit Phaser documentation                                    ║
+║                                                                            ║
+║                    Happy Gaming! 🎮                                        ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📞 SUPPORT PRIORITY:
+   1. Check FAQ.md for your issue
+   2. Read related documentation file
+   3. Review code comments in source files
+   4. Check browser console (F12) for errors
+   5. Try troubleshooting steps in FAQ.md
+
+Created with ❤️ for Ganesha Chaturthi Festival
+Version 1.0 | 2026
