@@ -25,7 +25,7 @@ class GameScene extends Phaser.Scene {
         // Create groups for sprites
         this.offerings = this.physics.add.group();
         this.obstacles = this.physics.add.group();
-        this.particles = this.add.particles(0xFFD700);
+        this.particles = this.add.particles('particle');
 
         // Create player (Ganesha)
         this.player = this.physics.add.sprite(width / 2, height - 80, 'ganesha');
@@ -61,7 +61,7 @@ class GameScene extends Phaser.Scene {
         });
 
         // Add particle emitter for ambient effect
-        this.ambientParticles = this.particles.createEmitterConfig({
+        this.ambientParticles = this.particles.createEmitter({
             x: width / 2,
             y: 0,
             speed: { min: -100, max: 100 },
